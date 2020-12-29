@@ -70,7 +70,6 @@ class LoginActivity : BaseActivity(), LoginContract.View {
         super.onResume()
         BaseApplication.INSTANCE.cicerone.navigatorHolder.setNavigator(navigator)
         presenter?.onViewCreated()
-        BaseApplication.INSTANCE.cicerone.navigatorHolder.setNavigator(navigator)
     }
 
     override fun onPause() {
